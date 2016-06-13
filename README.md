@@ -1,6 +1,6 @@
 # twitter_1
 With this shiny app you can map and analyze responses to tweets from **Donald Trump** and **Hillary Clinotn**.
-Furthermore the app calculates the positive oder negative sentiment aggregated on State level.
+Furthermore the app calculates the positive oder negative sentiment aggregated at State level.
 
 <a href="https://jonaskr.shinyapps.io/twitter_1/">Click here for a Demo:</a> 
 
@@ -15,7 +15,14 @@ Furthermore the app calculates the positive oder negative sentiment aggregated o
 ## Installation 
 You will need to collect your own tweets and read them inside `fb.r` as a `.json` object. The output from `fb.r` will be used inide shiny.
 
+## To Do
+As of now the sentiment is calculated counting positive/negative keywords using the NRC Word-Emotion Association Lexicon. This works in a lot of settings but it is not well suited to detect irony. 
+Furthermore, I am only able to classify the tweet in positive or negative, not if the tweet agrees with the candidate. E.g. a negative answer to a negative tweet could be seen that the user agrees and reinforces the negative tweet of the author
+Further development could use labeled tweets and leverage machine learning algorithm to classify tweets in positive/ negative. RTextTools delivers a lot of functionality and would improve the overall accuracy of the classification. 
 
+
+## Credits
+-Crowdsourcing a Word-Emotion Association Lexicon, Saif Mohammad and Peter Turney, To Appear in Computational Intelligence, Wiley Blackwell Publishing Ltd.
 
 Free Public License 1.0.0
 

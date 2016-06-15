@@ -1,18 +1,18 @@
 # Mapping-Tweets 
-With this shiny app you can map and analyze responses to tweets from **Donald Trump** and **Hillary Clinton**. Furthermore the app calculates the positive or negative sentiment aggregated at State level.
+With this shiny app you can map and analyze responses to tweets from **Donald Trump** and **Hillary Clinton**. Furthermore the data tool calculates the positive or negative sentiment aggregated at State level.
 
 <a href="https://jonaskr.shinyapps.io/twitter_1/">Click here for a Demo:</a> 
 
 ## Description
 - The files `ui.r, server.r and global.r` containing the shiny app. 
-- The file `fb.r` acceses twitter and follows the offical twitter acounts of Donald Trump and Hillary Clinotn.
-  - The tweets inisde the Demo were colectet in the second week in June 
+- The file `fb.r` access twitter and follows the official twitter accounts of Donald Trump and Hillary Clinton.
+  - The tweets for the Demo were collected in the second week in June.
   - `fb.r` uses only tweets which are responses to tweets from Trump or Clinton and have geo location enabled. 
-  - For all tweetes the sentiment was calulated, using the `syuzhet` package
+  - For all tweets the sentiment was calculated using the `syuzhet` package
   
 
 ## Installation 
-You will need to collect your own tweets and read them inside `fb.r` as a `.json` object. The output from `fb.r` will be used inide shiny.
+You will need to collect your own tweets and read them inside `fb.r` as a `.json` object. The output from `fb.r` will be used inside shiny.
 
 ## To Do
 As of now the sentiment is calculated counting positive/negative keywords using the NRC Word-Emotion Association Lexicon. This works in a lot of settings but it is not well suited to detect irony. 

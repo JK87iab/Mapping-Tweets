@@ -1,6 +1,5 @@
 # Mapping-Tweets 
-With this shiny app you can map and analyze responses to tweets from **Donald Trump** and **Hillary Clinotn**.
-Furthermore the app calculates the positive oder negative sentiment aggregated at State level.
+With this shiny app you can map and analyze responses to tweets from **Donald Trump** and **Hillary Clinton**. Furthermore the app calculates the positive or negative sentiment aggregated at State level.
 
 <a href="https://jonaskr.shinyapps.io/twitter_1/">Click here for a Demo:</a> 
 
